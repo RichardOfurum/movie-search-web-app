@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Search App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Search App</h1>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Enter a movie title">
+      <button id="search-button">Search</button>
+    </div>
+    
+    <div id="sort-container">
+      <label for="sort-select">Sort by:</label>
+      <select id="sort-select">
+        <option value="default">Default</option>
+        <option value="rating">Rating</option>
+        <option value="release">Release Date</option>
+      </select>
+    </div>
+
+    <!-- <div id="results-container"></div>
+    <div id="pagination-container">
+      <button id="previous-button">Previous</button>
+      <button id="next-button">Next</button>
+    </div> -->
+
+  </div>
+
+  <div id="results-container"></div>
+  <div id="pagination-container">
+    <button id="previous-button">Previous</button>
+    <button id="next-button">Next</button>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div class="movie-details">
+        <div class="poster-container">
+          <img id="modal-poster" src="" alt="Movie Poster">
+        </div>
+        <div class="movie-info">
+          <p id="modal-release-year"></p><br>
+          <p id="modal-plot"></p><br>
+          <p id="modal-cast"></p><br>
+          <p id="modal-genre"></p><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
